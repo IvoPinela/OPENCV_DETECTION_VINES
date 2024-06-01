@@ -3,6 +3,8 @@ import numpy as np
 
 
 def adjust_colors(image):
+    b = image[:, :, 0] * 1.3  # Aumenta o canal azul
+    g = image[:, :, 1] * 1.3  # Aumenta o canal verde
     r = image[:, :, 2] * 1.3  # Aumenta o canal vermelho
 
     # Garante que os valores permaneçam no intervalo válido de 0 a 255
